@@ -1,8 +1,5 @@
 FROM php:7.4-fpm
 
-# Copy application files
-COPY ../ ./
-
 # Set working directory
 WORKDIR /var/www/html
 

@@ -1,2 +1,5 @@
 .git
 .idea/
+
+./bin/restart-log.txt
+restart-log.txt

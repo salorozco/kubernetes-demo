@@ -19,3 +19,10 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
+          volumeMounts:
+            - mountPath: /var/www/html
+              name: demo-app-storage
+      volumes:
+        - name: demo-app-storage
+          persistentVolumeClaim:
+            claimName: demo-app-pvc
